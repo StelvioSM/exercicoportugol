@@ -10,7 +10,7 @@ public class Preguica extends Animal {
   		this.tempo = tempo;
       
 }
-	public String getraca() {
+	public String getraca()
 		return raca;
 	}
 
