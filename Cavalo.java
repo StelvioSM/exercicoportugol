@@ -1,33 +1,42 @@
-package Teste1;
+package atividade;
 
 public class Cavalo extends Animal {
-	private String cor;
-	private int altura;
 
-	public Cavalo(String cor, int altura, String nome, int idade) {
-		super(nome,idade);
-		this.cor = cor;
-		this.altura = altura;
-	}
+private String cor;
+private int altura;
 
-	public String getCor() {
-		return cor;
-	}
+public Cavalo(String cor, int altura, String nome, int idade) {
+	super(nome,idade);
+	this.cor = cor;
+	this.altura = altura;
+}
 
-	public void setCor(String cor) {
-		this.cor = cor;
-	}
+@Override 
+public String emitirSom(){
+ return("");	
 
-	public int getAltura() {
-		return altura;
-	}
+}
 
-	public void setAltura(int altura) {
-		this.altura = altura;
-	}
-	public void ImprimirInformacoes() {
-		System.out.println(
-				"\nO cavalo se chama: tor "+ "\nIdade:3 anos " + "\ne da cor: marrom " + "\nMede a Altura de:3m");
-	}
+
+
+public String getCor() {
+	return cor;
+}
+
+public void setCor(String cor) {
+	this.cor = cor;
+}
+
+public int getAltura() {
+	return altura;
+}
+
+public void setAltura(int altura) {
+	this.altura = altura;
+}
+public void ImprimirInformacoes() {
+	System.out.println(
+			"\nO cavalo se chama: tor "+ "\nIdade:3 anos " + "\ne da cor: marrom " + "\nMede a Altura de:3m");
+}
 
 }
